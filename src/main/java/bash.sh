@@ -28,3 +28,8 @@ show_todo(){
   echo "Uncompleted tasks "
   cat $todo_file
 }
+
+add_todo(){
+  echo "$1" >> $todo_file
+  echo "1$ : new task added"
+}
