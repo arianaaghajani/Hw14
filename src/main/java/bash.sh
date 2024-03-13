@@ -84,3 +84,22 @@ replace_text(){
   done
   echo "word 'world' replace with 'bash' in the files"
 }
+
+while true; do
+  echo "Menu: "
+  echo "1. create five text files"
+  echo "2. append 'Hello world' to the files"
+  echo "3. replace 'world' with 'bash' in the files"
+  echo "4. Exit"
+
+  read -p "enter your choice: " choice
+
+  case $choice in
+  1) create_files ;;
+  2) append_text ;;
+  3) replace_text ;;
+  4) echo "Exiting program" ; exit 0 ;;
+  *) echo "invalid choice.Please select again" ;;
+esac
+
+done
