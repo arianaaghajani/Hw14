@@ -55,3 +55,18 @@ add_todo "buy bread"
 
 show_todo
 complete_task "java homework"
+
+echo ""
+show_todo
+echo "completed tasks"
+cat $done_file
+
+deleted_task 1
+
+//2
+create_files(){
+  for i in {1..5}; do
+      touch "file${i}.txt"
+  done
+  echo "five text files created "
+}
