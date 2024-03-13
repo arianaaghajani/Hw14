@@ -40,3 +40,10 @@ complete_task(){
   echo "$task" >> $done_file
   echo "task \"$task\"added new task succesfully"
 }
+
+deleted_task(){
+  task=$1
+  sed -i -i "/$task/d" $deleted_file
+  echo "$task" >> $deleted_file
+  echo "task \"$task\"deleted"
+}
