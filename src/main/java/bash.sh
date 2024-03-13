@@ -70,3 +70,10 @@ create_files(){
   done
   echo "five text files created "
 }
+
+append_text(){
+  for i in {1..5}; do
+    echo "Hello world" >> "file${i}.txt"
+  done
+  echo "text 'hello world' appended to the files"
+}
