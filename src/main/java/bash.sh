@@ -23,5 +23,8 @@ show_tasks(){
   cat deleted_file
   ;;
   esac
-
+}
+show_todo(){
+  echo "Uncompleted tasks "
+  cat $todo_file
 }
