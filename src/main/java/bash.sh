@@ -33,3 +33,10 @@ add_todo(){
   echo "$1" >> $todo_file
   echo "1$ : new task added"
 }
+
+complete_task(){
+  task=$1
+  sed -i "/$task/d" $todo_file
+  echo "$task" >> $done_file
+  echo "task \"$task\"added new task succesfully"
+}
