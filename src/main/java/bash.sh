@@ -47,3 +47,11 @@ deleted_task(){
   echo "$task" >> $deleted_file
   echo "task \"$task\"deleted"
 }
+
+
+show_todo
+add_todo "java homework"
+add_todo "buy bread"
+
+show_todo
+complete_task "java homework"
