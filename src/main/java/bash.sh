@@ -77,3 +77,10 @@ append_text(){
   done
   echo "text 'hello world' appended to the files"
 }
+
+replace_text(){
+  for i in {1..5}; do
+    sed -i 's/world/bash/g' "file${i}.txt"
+  done
+  echo "word 'world' replace with 'bash' in the files"
+}
